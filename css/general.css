@@ -1,0 +1,313 @@
+@font-face {
+	font-family: opensans;
+	src: url(/font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: playfair-regular;
+	src: url(/font/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+	font-family: playfair-medium;
+	src: url(/font/PlayfairDisplay-Medium.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #efe7da;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+* {
+	font-family: "Hind", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #044040;
+	color: #efe7da;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+body {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.header-nav {
+	align-self: center;
+	font-size: 1rem;
+	font-weight: 100;
+}
+
+header h3 {
+	font-family: opensans;
+}
+
+.menu-knap {
+	background-color: #88a45b;
+	align-self: center;
+	padding-right: 1rem;
+	margin-top: 10px;
+	text-decoration: none;
+	margin: 10px;
+	padding: 15px;
+	border-radius: 50px;
+}
+
+.menu-knap img {
+	font-family: opensans;
+	font-size: 25px;
+	color: #044040;
+}
+
+.logo {
+	align-self: center;
+	padding-left: 1rem;
+	font-family: playfair-regular;
+	font-style: normal;
+	font-size: 5em;
+}
+
+h1 {
+	color: #044040;
+	font-family: playfair-regular;
+	font-size: 4em;
+	font-optical-sizing: auto;
+	font-style: normal;
+	line-height: 1em;
+	margin-top: 25px;
+	margin-bottom: 35px;
+	overflow-wrap: break-word;
+	hyphens: auto;
+}
+
+h2 {
+	color: #044040;
+	font-family: opensans;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 2em;
+	line-height: 1.5em;
+	margin-bottom: 8px;
+	overflow-wrap: break-word;
+	hyphens: auto;
+}
+
+p {
+	color: #044040;
+	font-family: opensans;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 1em;
+	overflow-wrap: break-word;
+	hyphens: auto;
+}
+
+.hero-sektion {
+	display: grid;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.lottie-animation {
+	grid-column: 1;
+	grid-row: 1;
+	z-index: 1;
+}
+
+.CTA-knap {
+	grid-column: 1;
+	grid-row: 1;
+	place-self: end;
+	margin: 1rem;
+	z-index: 2;
+	background-color: #b7505d;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 50px;
+}
+
+.CTA-knap a {
+	text-decoration: none;
+	font-family: opensans;
+	color: #efe7da;
+}
+
+.tekst-sektion1 {
+	margin-left: 20px;
+}
+
+.billede-1 {
+	height: auto;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.billede-1 h1 {
+	line-height: 1em;
+	color: aliceblue;
+	font-size: 2.5em;
+}
+
+.sektion-billeder {
+	margin-top: 25px;
+	background-color: #446644;
+}
+
+.sektion-billeder h2 {
+	color: #efe7da;
+}
+
+.sektion-billeder h2 {
+	margin-left: 20px;
+	padding-top: 20px;
+}
+
+.grid-4-3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 10px;
+	padding: 10px;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: #044040;
+	color: #f2f2f2;
+	height: 50px;
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#foto1,
+#foto2,
+#foto3,
+#foto4 {
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 30px;
+	border: 0.9px solid #044040;
+}
+
+@media (max-width: 800px) {
+	.grid-1-1 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.billede-1 {
+		order: 2;
+	}
+
+	.tekst-sektion1 {
+		order: 1;
+	}
+
+	#foto1,
+	#foto2,
+	#foto3,
+	#foto4 {
+		aspect-ratio: 1/1;
+	}
+
+	#foto1 {
+		grid-column: 1/3;
+	}
+
+	#foto2 {
+		grid-column: 3/5;
+	}
+
+	#foto3 {
+		grid-column: 1/3;
+	}
+
+	#foto4 {
+		grid-column: 3/5;
+	}
+}
+
+@media (min-width: 800px) {
+	.grid-1-1 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 25px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.billede-1 {
+		aspect-ratio: 1.5/1;
+	}
+
+	.grid-4-3 {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	#foto1 {
+		grid-column: 1/2;
+		grid-row: 1/3;
+	}
+
+	#foto2 {
+		grid-column: 2/4;
+		grid-row: 1/2;
+	}
+
+	#foto3 {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+
+	#foto4 {
+		grid-column: 3/4;
+		grid-row: 2/3;
+	}
+
+	body {
+		padding: 0 10px 0 10px;
+	}
+}
+
+@media (max-width: 700px) {
+	.logo {
+		font-size: 3em;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 1.6rem;
+	}
+}
+
+/* 
+
+.Sektion_video h2 {
+	margin-left: 20px;
+	padding-top: 20px;
+}
+
+ */
