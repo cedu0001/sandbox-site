@@ -1,16 +1,16 @@
 @font-face {
 	font-family: opensans;
-	src: url(/font/OpenSans-Regular.ttf);
+	src: url(../font/OpenSans-Regular.ttf);
 }
 
 @font-face {
 	font-family: playfair-regular;
-	src: url(/font/PlayfairDisplay-Regular.ttf);
+	src: url(../font/PlayfairDisplay-Regular.ttf);
 }
 
 @font-face {
 	font-family: playfair-medium;
-	src: url(/font/PlayfairDisplay-Medium.ttf);
+	src: url(../font/PlayfairDisplay-Medium.ttf);
 }
 
 * {
@@ -68,9 +68,6 @@ header h3 {
 	margin: 10px;
 	padding: 15px;
 	border-radius: 50px;
-}
-
-.menu-knap img {
 	font-family: opensans;
 	font-size: 25px;
 	color: #044040;
@@ -121,8 +118,8 @@ p {
 
 .hero-sektion {
 	display: grid;
-	background-size: cover;
-	background-repeat: no-repeat;
+	/* 	background-size: cover;
+	background-repeat: no-repeat; */
 }
 
 .lottie-animation {
